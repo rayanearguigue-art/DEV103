@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Fitness club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./images/logo.png">
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            display: flex;
+            background-color: rgb(238, 234, 226);
+            
+        }
+        #aside{
+            background-color: rgb(14, 14, 20);
+            height:100vh;
+            width: 20px;
+            padding:0px 20px;
+            overflow: hidden;
+            transition: .5s;
+            position: fixed;
+        }
+        #aside:hover{
+            width: 180px;
+        }
+        a{
+            display: block;
+            display: flex;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px 0px;
+            border-radius: 10px;
+            align-items: center;
+            transition: .5s;
+            font-family: sans-serif;
+            color: rgb(238, 234, 226);
+            
+        }
+        a:hover{
+            background-color: rgb(66, 63, 63);
+        }
+        ul{
+            /* background-color: black; */
+            position: relative;
+            height: 95%;
+            list-style: none;
+        }
+        i{
+            font-size: large;
+            color: aliceblue;
+        }
+        p{
+            margin-left: 20px;
+        }
+        #last-li{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        input::placeholder{
+            color:#a9a9c8;
+        }
+        .block-ckeckin{
+    margin-left: 202px;        
+    border:1px solid #e0e7ff;
+    padding:13px 6px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    justify-content:right;
+    padding-left: 9px;
+    color: #a7a6af;
+    background-color: white;
+        }
+        .e-mail-mot{
+    border-width: 0px;
+    width:250px;
+    outline: none;
+}
+.mot-de-pass-e{
+    font-family: monospace;
+    font-size: large;
+    font-weight: 800;
+    color:rgb(228, 99, 39);
+    display: inline-block;
+    margin-bottom: 6px;
+    word-spacing: -6px;
+    letter-spacing: -2;
+}
+.h{
+    color: black;
+}
+.s{
+    color: #a9a9c8;
+}
+header{
+    padding-top: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+#second-div-head{
+    display: flex;
+}
+/* .profile{
+    margin-left: 10px;
+} */
+#content{
+    width: 100%;
+    margin-left: 200px;
+}
+/* i[class$="fa-solid fa-bell"]{
+    margin-left: 500px;
+} */
+#accuielle{
+    text-align: center;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+.box{
+    border: 1px solid black;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: rgb(14, 14, 20);
+    color: rgb(238, 234, 226);
+    font-family: sans-serif;
+    /* justify-content: center; */
+    text-align: center;
+    line-height: 40px;
+}
+.box:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 7px black;
+}
+p{
+    color: #a7a6af;
+    font-size: small;
+}
+span{
+    color: gray;
+    font-size: 40px;
+}
+#date{
+    font-family: cursive;
+    font-size: 10px;
+    font-weight: bold;
+    color: #6e6e7e;
+}
+table{
+    margin-left: 30px;
+    width: 70%;
+    margin-bottom: 30px;
+     border-collapse: collapse;
+}
+th{
+    background-color: #3b3b3d;
+   
+}
+td{
+    background-color: #a9a9c8;
+}
+    </style>
+</head>
+<body>
+    <div id="aside">
+        <ul>
+            <li class="first-li">
+                <a href="#">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    <p>Members</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <p>Coaches</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <p>Programmes</p>
+                </a>
+            </li>
+             <li>
+                <a href="#">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <p>Subscriptions</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <p>Attendance</p>
+                </a>
+            </li>
+              <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
+                </a>
+            </li>
+            <li id="last-li">
+                <a href="./inedx.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>logout</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="content">
+
+       <header>
+            <div id="accuielle">
+                <div id="date">Mercredi 28 mai 2026</div>
+                <h2>Hello,Admin</h2>
+                <p>Here is an overview of your progress.</p>
+            </div>
+            <div id="second-div-head">
+              <div id="input-email-block" class="block-ckeckin">
+                    <i class="s fa-solid fa-magnifying-glass"></i>
+                    <input class="e-mail-mot" id="e-mail" type="email" placeholder="Research" >
+                </div>
+             <!-- <div class="notification"><i class="h fa-solid fa-bell"></i></div>
+             <div class="profile"><i class="h fa-solid fa-user"></i></div> -->
+            </div>
+        </header> 
+        <div class="boxes">
+            <div class="box">
+                <i class="f fa-solid fa-users"></i>
+                <div class="inside-box">
+                    <p>Enrolled Programs</p>
+                    <span>2</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="f fa-solid fa-chalkboard-user"></i>
+                <div class=" inside-box">
+                    <p>Completed Sessions</p>
+                    <span>12</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="f fa-solid fa-calendar-check"></i>
+                <div class="inside-box">
+                    <p>Attendance Rate</p>
+                    <span>92%</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="f fa-regular fa-credit-card"></i>
+                <div class="inside-box">
+                    <p>Goals Achieved</p>
+                    <span>6/10</span>
+                </div>
+            </div>
+        </div>
+    <table border="1">
+    
+        <tr>
+            <th>Date</th>
+            <th>Activity</th>
+            <th>Details</th>
+        </tr>
+    
+
+    
+        <tr>
+            <td>17/06/2026</td>
+            <td>Attendance</td>
+            <td>Weight training session completed</td>
+        </tr>
+
+        <tr>
+            <td>16/06/2026</td>
+            <td>Program</td>
+            <td>Cardio program updated</td>
+        </tr>
+
+        <tr>
+            <td>15/06/2026</td>
+            <td>Goal</td>
+            <td>Goal "Lose 2 kg" achieved</td>
+        </tr>
+
+        <tr>
+            <td>14/06/2026</td>
+            <td>Session</td>
+            <td>Leg workout completed</td>
+        </tr>
+
+</table>
+    </div>
+
+</body>
+</html>

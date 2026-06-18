@@ -1,0 +1,203 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ body {
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+@font-face{
+  font-family: 'rayane';
+  src:url(./Black_Ops_One/BlackOpsOne-Regular.ttf);
+}
+
+nav a[href^="#"]{
+  text-decoration: none;
+  color: rgb(244, 247, 245);
+  font-family: 'rayane';
+  font-size: large;
+  text-shadow: 3px 3px 2px black;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0;
+  background-color: rgb(105, 102, 102);
+  box-shadow: 2px 2px 4px black;
+  align-items: baseline;
+}
+
+nav button{
+  border:1px solid rgb(189, 177, 177);
+  border-radius: 5px;
+  padding: 7px 12px ;
+  background-color: rgb(66, 144, 158);  
+  box-shadow: 3px 3px 2px rgb(43, 42, 42);
+  font-family: 'rayane';
+}
+nav button a{
+  color: azure;
+  text-decoration: none;
+}
+
+#s1{
+  padding: 40px;
+  background-color: rgb(148, 143, 143);
+  line-height: 30px;
+  text-align: center;
+}
+section h1{
+  color: rgb(244, 247, 245);
+  margin-bottom: 30px;
+  font-size: xx-large;
+}
+img{
+  width: 10%;
+}
+section p{
+  color: rgb(68, 58, 58);
+  font-weight: 900;
+}
+section button{
+  padding: 10px;
+  width: 150px;
+  margin-top: 30px;
+  border:1px solid rgb(189, 177, 177);
+  border-radius: 5px;
+  padding: 7px 12px ;
+  background-color: rgb(66, 144, 158);  
+  box-shadow: 3px 3px 2px rgb(43, 42, 42);
+  font-family: 'rayane';
+  color: rgb(244, 247, 245);
+
+}
+#s2{
+  background-color: rgb(34, 31, 31);
+  /* padding-left: 25%; */
+  justify-content: center;
+}
+
+.sports-art,.abon-art{
+  background-color: rgb(131, 194, 194);
+  border: 1px solid rgb(212, 198, 198);
+  border-radius: 30px;
+  margin: 30px 20px;
+  justify-content: center;
+  padding: 10px;
+  
+}
+.sports-art:hover{
+  box-shadow: 3px 3px 10px gray;
+  transform: translateY(-5px);
+}
+.titre-second{
+  color: whitesmoke;
+  text-align: center;
+  background-color: rgb(7, 117, 168);
+}
+#into-p-sport{
+  padding-left: 25%;
+}
+
+.discrip-nom-prog{
+  text-align: center;
+  margin: 5px;
+}
+img{
+  border-radius: 30px;
+   width: 100%;
+  height: 180px;
+  display: block;
+  margin: none;
+}
+h3{
+  color: aliceblue;
+  width: 200px;
+}
+#s3{
+  background-color: rgb(148, 143, 143);
+}
+#s3-div{
+  padding-left: 25%;
+}
+.s3-art{
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: rgb(85, 138, 168);
+  margin: 20px;
+}
+.s3-art:hover{
+  box-shadow: 3px 3px 10px rgb(243, 235, 235);
+  transform: translateY(-5px);
+}
+
+#s4{
+  background-color: rgb(34, 31, 31);
+}
+#s4-div{
+  padding:0px 20% ;
+}
+.abon-art:hover{
+  box-shadow: 3px 3px 10px rgb(243, 235, 235);
+  transform: translateY(-5px);
+}
+
+#s5{
+  background-color: rgb(148, 143, 143);
+}
+
+#s5-div{
+  padding:0px 20%;
+}
+
+.trans-art{
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  background-color: rgb(85, 138, 168);
+  white-space: pre-wrap;
+}
+
+
+#s6{
+  background-color: rgb(34, 31, 31);  
+}
+table{
+  margin: 40px 0px;
+}
+footer{
+  background-color: rgb(105, 102, 102);
+  text-align: center;
+  padding: 40px;
+}
+.footer-div{
+  font-family: 'arguigue';
+  font-size: x-small;
+  margin-bottom: 8px;
+  color: aliceblue;
+}
+#footer-div2{
+  display: flex;
+  justify-content: space-around;
+}
+footer div span{
+  color: rgb(141, 60, 60);
+  font-weight: 800;
+}
+footer a{
+  color: aqua;
+  text-decoration: none;
+}
+footer div div a{
+  margin-left: 5px;
+}
+  
+   
+
+@font-face{
+     font-family: 'arguigue';
+    src:url(./Chelsea_Market/ChelseaMarket-Regular.ttf);
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Registre</title>
+    <style>
+        *{
+    margin:0px;
+}
+
+header{
+    background-color: #f4f3ff;
+    height:40px;
+}
+
+body{
+    background-color: #eaeaf0;
+
+}
+
+#aurora-icon{
+    color:#f4f3ff;
+    font-size: small;
+    background-color:#6366f1;
+    border-radius: 5px;
+    padding:7px;
+    margin-top: 5px;
+}
+
+#headerspan1{
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    position:absolute;
+    display: inline-block;
+}
+
+#headerspan2{
+    margin-left: 75%;
+    color:#6b6b8a;
+    font-family: sans-serif;
+    font-size: small;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#header-link{
+    color:rgb(14, 245, 14);
+    text-decoration-line:underline ;
+    text-decoration-color: #f4f3ff;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+#arrow{
+    margin-left: 5px;
+}
+#div-parent{
+    position:relative;
+}
+
+#b1{
+    background-color: #eef2ff;
+    border-width: 0px;
+    padding:5px 8px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size:xx-small;
+    font-weight: 600;
+    color:rgb(51, 114, 51);
+    margin-bottom: 20px;
+}
+
+#big-p{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size:x-large;
+    margin-bottom: 8px;
+}
+
+#sous-titre{
+    color:#6b6b8a;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+#google-github{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0px;
+}
+
+.goo-gethub{
+    border:1px solid gray;
+    border-radius: 7px;
+    color:#032e0c;
+    background-color: #ffffff;
+    font-family: monospace;
+    font-weight: 800;
+    padding: 9px 13%;
+}
+
+#sous-bottons{
+    /* text-align: center; */
+    text-decoration-line: none;
+    color: #a0a0a3;
+    font-size: small;
+    font-family:monospace ;
+    margin-bottom: 15px;
+}
+
+#top{
+    border:1px solid white;
+    border-radius: 30px;
+    border-top:2px solid rgb(3, 107, 3);
+    width:30%;
+    position: absolute;
+    top:35px; 
+    left:35%;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+#under-top{
+    margin:20px 30px;
+}
+#obligatory{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.pre-nom{
+    display: flex;
+    border:1px solid rgb(128, 125, 125);
+    border-radius:5px;
+    width:85%;
+    padding:4%;
+}
+
+.-nom{
+    width:100%;
+    border-style: none;
+    outline: none;
+    margin-right:none;
+}
+
+input::placeholder{
+    font-size: 13px;
+    color: #a0a0a3;
+}
+#facult{
+    color:#717174;
+    margin-bottom: 3px;
+}
+
+
+
+
+i[class$="fa-user"]{
+    font-size: small;
+    color: #a0a0a3;
+    margin-right: 3px;
+}
+
+i[class^="s"]{
+    font-size: small;
+    color: #a0a0a3;
+    margin-right: 3px;
+
+}
+
+i[class^="fa-regular"]{
+    font-size: small;
+    color: #a0a0a3;
+    margin-right: 3px;
+
+}
+
+
+
+
+
+.info{
+    font-family: sans-serif;
+    font-size: small;
+    color: rgb(3, 107, 3);
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.rest-info{
+    border:1px solid rgb(128, 125, 125);
+    border-radius:5px;
+    width:100%;
+    padding:2%;
+    display:flex;
+    margin-bottom: 10px;
+}
+#age{
+    display:flex;
+    justify-content: space-between;
+}
+
+.in{
+    width:95%;
+    border-style: none;
+    outline: none;
+}
+
+
+
+select{
+     width:95%;
+    border-style: none;
+    outline: none;
+}
+
+.check{
+    font-family: sans-serif;
+    font-size: small;
+    color: #8c8c8f;
+}
+#last-p{
+    margin:30px;
+    font-family: sans-serif;
+    font-size: small;
+    color: #8c8c8f;
+}
+.check-href{
+    text-decoration-line: none;
+    color: rgb(3, 107, 3);
+    font-size:small;
+}
+
+#under-botton{
+    font-family: sans-serif;
+    font-size:x-small;
+    color: #a0a0a3;
+    font-weight: 600;
+
+}
+
+#b2{
+    width:100%;
+    height:40px;
+    border-radius: 10px;
+    color:#ffffff;
+    background-color: rgb(3, 107, 3);
+    text-transform: capitalize;
+    font-size: 80%;
+    margin-top:10px;
+    margin-bottom: 15px;
+    border-style: none;
+}
+button[type="checkbox"]{
+    display: block;
+}
+.into-p{
+    text-decoration-line: none;
+    color: rgb(3, 107, 3);
+    
+    
+}
+
+.header-link{
+    color: green;
+    margin-left: 5px;
+    font-size: large;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.footer-block{
+    border:1px solid rgb(219, 214, 214);
+    border-radius: 15px;
+    font-size:x-small;
+    font-family:sans-serif;
+    font-weight: 600;
+    padding:7px;
+    color: #a0a0a3;
+}
+
+.v{
+   background-color: rgb(3, 107, 3);
+    margin-right: 3px;
+}
+
+#f-m{
+    font-family: sans-serif;
+    font-size:small;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around; 
+    margin: 8px 0px;
+}
+#sex-p{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(3, 107, 3);
+}
+#confirm{
+    color: #ffffff;
+    text-decoration-line: none;
+    font-family: sans-serif;
+}
+    </style>
+</head>
+<body>
+     <header>
+        <a id="header-arrow" href="./inedx.html" class="header-link"><i class="fa-solid fa-arrow-left"></i></a>
+        <span id="headerspan2">Do you have an account? </span><a href="./login.html" ><span id="header-link"> Sign in  <i id="arrow" class="fa-solid fa-arrow-right"></i></span></a>
+    </header>
+     <div id="div-parent">
+    <div id="top">
+        <div id="under-top">
+            <p id="big-p">Create your account</p>
+            <p id="sous-titre">No credit card required.Cancel all moments.</p>
+            <a  href="./login.html" id="sous-bottons">or signe up with e-mail</a>
+            <form action="regestre.php">
+
+                    <div id="obligatory">
+                        <div class="align">
+                            <label class="info" for="-prenom">First name:</label>
+                            <div class="pre-nom"><i class="fa-regular fa-user"></i><input class="in" type="text"  placeholder="Jean"></div>
+                        </div>
+                        
+                        <div class="align">
+                            <label class="info" for="-nom">Last name:</label>
+                            <div class="pre-nom"><i class="fa-regular fa-user"></i><input class="in" type="text"  placeholder="Dupont"></div>
+                        </div>
+                    </div>
+
+                    <label class="info" for="email">Proffetionnel E-mail</label>
+                    <div class="rest-info"><i class="fa-regular fa-envelope"></i><input class="in" id="email" type="text" class="rest-of" placeholder="vous@entreprise.com"></div>
+                    <div id="age">
+                        <label class="info" for="age">Age:</label>
+                    </div>
+                    <div class="rest-info"><input class="in" id="age" type="tel" placeholder="age" pattern="[0,100]"></div>
+
+                    <label class="info" for="role">Formule</label>
+                    <div class="rest-info">
+                      <select name="_role" size="1">
+                        <option value="0"  disabled selected>Choise</option>
+                        <option value="1">Endurance</option>
+                        <option value="2">Weight Loss</option>
+                        <option value="3">Fitness Improvement</option>
+                        <option value="4">General Wellness</option>
+                        <option value="5">Muscle Gain</option>
+                      </select>
+                      
+                    </div>
+                    <label class="info" for="role">Formule</label>
+                    <div class="rest-info">
+                      <select name="_role" size="1">
+                        <option value="0"  disabled selected>Choise</option>
+                        <option value="1">Basic Formule</option>
+                        <option value="2">Standard Formule</option>
+                        <option value="3">Premium Formule</option>
+                        <option value="4">VIP Formule</option>
+                      </select>
+                      
+                    </div>
+
+                    <label class="info" for="Mot-pass">Password</label>
+                    <div class="rest-info">  
+                        <i  class="s fa-solid fa-lock"></i>
+                        <input  id="Mot-pass" type="password" class="in" pattern=".{8,}" placeholder="Min.8 caracteres">
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+                      <div class="sex">
+                        <p id="sex-p">Your sex:</p>
+                        <div id="f-m">
+                            <div><input id="f" type="radio" name="f-m"><label for="f">Fimale</label></div>
+                            <div><input id="m" type="radio" name="f-m" ><label for="m">Male</label></div>
+                        </div>
+                    </div>
+
+                    <table>
+                        <tr><td><input id="accepte" type="checkbox"></td><td><label for="accepte" class="check">I accepte <a class="check-href" href="####gg">the Conditions of using </a>and the <a class="check-href" href="###ff">Politique of confidentiality </a></label></td></tr>
+                        <tr><td><input id="recevoir" type="checkbox"></td><td><label for="recevoir" class="check">Receive tips and product updates</label></td></tr>
+                    </table>
+
+                    <button id="b2" type="button" id="b"><a  id="confirm" href="./dashboard.html">Confirmation</a><i id="arrow" class="fa-solid fa-arrow-right"></i></button>
+                    <p id="under-botton"> By signing up, you confirm that you have read and accepted our<a href="###jj" class="into-p">Conditions </a>and <a href="###ggg" class="into-p">Politique of confidentiality</a></p>
+
+                    <p id="last-p" >You have a previous account <a href="./login.html" class="check-href">Sign in</a></p>
+                  
+
+            </form>
+        </div>
+        <div id="footer">
+                <div class="footer-block"><i class="v fa-solid fa-calendar"></i>14 jours gratuits</div>
+                <div class="footer-block"><i class="v fa-solid fa-credit-card"></i>Sans carte bancaire</div>
+                <div class="footer-block"><i class="v fa-solid fa-rotate-left"></i>Annulez à tout moment</div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
